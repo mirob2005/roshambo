@@ -11,6 +11,9 @@ Roshambo::Application.routes.draw do
   get "throw/spock"
   
   get "throw/stats"
+  
+  match ':id' => 'throw#index'
+  match ':id/:symbol' => 'throw#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

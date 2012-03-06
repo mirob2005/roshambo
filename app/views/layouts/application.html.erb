@@ -2,10 +2,13 @@
 <html>
 <head>
   <title>Roshambo</title>
+  <h1><%= yield %></h1>
   <%= stylesheet_link_tag :all %>
   <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
-  <%= yield %>
+  <h1> <%= @result %> </h1>
+  <br>
+  <h2> <%= @score %> </h2>
 </head>
 <br>
 <h2>Chose you next move wisely!</h2>
