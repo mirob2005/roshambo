@@ -1,4 +1,17 @@
 Roshambo::Application.routes.draw do
+	
+  get "throw/rock"
+
+  get "throw/paper"
+
+  get "throw/scissors"
+
+  get "throw/lizard"
+
+  get "throw/spock"
+  
+  get "throw/stats"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

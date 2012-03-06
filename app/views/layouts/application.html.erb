@@ -5,10 +5,17 @@
   <%= stylesheet_link_tag :all %>
   <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
+  <%= yield %>
 </head>
-<body>
-
-<%= yield %>
-
-</body>
+<br>
+<h2>Chose you next move wisely!</h2>
+  <body>
+    <p><a href='/throw/rock'>Rock</a></p>
+    <p><a href='/throw/paper'>Paper</a></p>
+    <p><a href='/throw/scissors'>Scissors</a></p>
+    <p><a href='/throw/lizard'>Lizard</a></p>
+    <p><a href='/throw/spock'>Spock</a></p>
+    <br>
+    <p><a href='/throw/stats'>Check Your Stats Here</a></p>
+  </body>
 </html>
