@@ -14,27 +14,6 @@ describe ThrowController do
                       :content => "You Chose #{@player_throw}!")
     end
   end
-  
-#  describe "GET result" do
-#    it "should be successful" do
-#      @defeat = {rock: [:scissors,:lizard], paper: [:rock,:spock],  scissors: [:paper,:lizard], spock: [:scissors,:rock], lizard: [:spock,:paper]}
-#  	  @throws = @defeat.keys
-#      @player_throw = @throws.sample
-#      @computer_throw = @throws.sample
-
-#      get @player_throw.to_s
-#      if @player_throw == @computer_throw
-#        response.should have_selector("h1",
-#                        :content => "You tied with the computer. Try again!")
-#	    elsif @computer_throw == @defeat[@player_throw][0] or @computer_throw == @defeat[@player_throw][1]
-#	      response.should have_selector("h1",
-#                        :content => "Nicely done; #{@player_throw} beats #{@computer_throw}!")
-#      else 
-#	      response.should have_selector("h1",
-#                        :content => "Ouch; #{@computer_throw} beats #{@player_throw}. Better luck next time!")
-#      end     
-#    end
-#  end
 
   describe "GET 'rock'" do
     it "should be successful" do
